@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .tic-btn {
+    @apply bg-dark-accent rounded border text-center text-light font-bold border-light-accent text-7xl hover:bg-dark hover:border-dark-accent  hover:text-purple-700 default-transition;
+  }
+  .default-transition {
+    @apply transition duration-500;
+  }
+}

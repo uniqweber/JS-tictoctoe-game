@@ -2,12 +2,46 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=\, initial-scale=1.0" />
-    <link rel="stylesheet" href="output.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/output.css" />
     <title>Tic Toc Toe</title>
   </head>
-  <body>
-    <h1>hello</h1>
-    <script src="src/script.js"></script>
+
+  <body class="font-rubik bg-dark">
+    <div class="min-h-screen flex justify-center items-center">
+      <div class="border p-20 border-purple-700 rounded-xl">
+        <h2 class="text-center text-light text-5xl uppercase font-bold mb-10">
+          Tic <span class="text-purple-700">Toc</span> Toe
+        </h2>
+        <div class="grid grid-cols-2 text-light mb-7 gap-2 items-center">
+          <h5 class="uppercase text-lg font-bold"> Turn  <span class="pl-2">👉</span></h5>
+          <h5 class="uppercase text-center font-bold border border-blue-500 rounded-md px-10 py-2.5 ">Player O</h5>
+        </div>
+        <div id="wrapper" class="grid grid-cols-3 gap-2 h-96 w-96">
+          <button class="tic-btn">O</button>
+          <button class="tic-btn">X</button>
+          <button class="tic-btn">O</button>
+          <button class="tic-btn">X</button>
+          <button class="tic-btn">O</button>
+          <button class="tic-btn">X</button>
+          <button class="tic-btn">O</button>
+          <button class="tic-btn">X</button>
+          <button class="tic-btn">O</button>
+        </div>
+        <div class="grid grid-cols-2 mt-10 gap-2">
+          <button
+            class="bg-purple-700 text-light py-2.5 px-10 rounded uppercase default-transition hover:bg-purple-800"
+          >
+            Reset Game
+          </button>
+          <button class="bg-blue-500 text-light py-2.5 px-10 rounded uppercase">
+            New Game
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- js file -->
+    <script src="styles/script.js"></script>
   </body>
 </html>
